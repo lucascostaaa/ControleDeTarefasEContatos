@@ -1,0 +1,19 @@
+﻿SELECT * FROM TB_Tarefas
+
+SELECT [ID],[TITULO],[DATACONCLUSAO],[PERCENTUAL],[PRIORIDADE] FROM TB_Tarefas WHERE [PERCENTUAL] = 100
+
+UPDATE TB_Tarefas 
+	SET 
+		[TITULO] = 'teste atualizacao2', 
+		[DATACONCLUSAO] = '05/06/2021',
+		[PERCENTUAL] = 90,
+		[PRIORIDADE] = 'alta'
+
+	WHERE
+		[ID] = 8
+
+DELETE FROM TB_Tarefas
+	WHERE 
+		[ID] = 8
+
+SELECT * FROM TB_Contatos
